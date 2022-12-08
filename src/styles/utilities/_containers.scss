@@ -1,0 +1,86 @@
+@use '../constants/extends' as *;
+
+.container {
+  & {
+    @extend %m-i-auto;
+    width: min(130.625rem, 93%);
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5vh;
+  }
+
+  &__hero-image {
+    min-height: 50vmin;
+    width: min(45rem, 90%);
+    margin-inline: auto;
+    margin-top: 10vh;
+    background-image: url('/src/assets/images/chicken-adobo.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+  }
+
+  &__sample-cuisines {
+    min-height: 50vmin;
+    width: min(45rem, 90%);
+    margin-inline: auto;
+    margin-top: 10vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+
+    &--kare-kare {
+      background-image: url('/src/assets/images/kare-kare.webp');
+    }
+
+    &--sisig {
+      background-image: url('/src/assets/images/sisig.webp');
+    }
+
+    &--sinigang {
+      background-image: url('/src/assets/images/sinigang.webp');
+    }
+
+    &--pork-adobo {
+      background-image: url('/src/assets/images/pork-adobo.webp');
+    }
+
+    &--chicken-adobo-dried {
+      background-image: url('/src/assets/images/chicken-adobo-dried.webp');
+    }
+
+    &--pinakbet {
+      background-image: url('/src/assets/images/pinakbet.webp');
+    }
+
+    &--lechon {
+      background-image: url('/src/assets/images/lechon.webp');
+    }
+
+    &--bicol-express {
+      background-image: url('/src/assets/images/bicol-express.webp');
+    }
+
+    &--papaitan {
+      background-image: url('/src/assets/images/papaitan.webp');
+    }
+  }
+
+  &__footer-image {
+    min-height: 65vmin;
+    width: min(55rem, 90%);
+    margin-inline: auto;
+    margin-top: 8vh;
+    background-image: url('/src/assets/images/kainan-dulang.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+  }
+}
+
